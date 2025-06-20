@@ -1,3 +1,4 @@
+// App.jsx
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -16,14 +17,13 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "/app", 
-    element: <MainLayout />,
+    path: "/app",
+    element: <MainLayout />, 
     children: [
-     {
-  path: "profile", 
-  element: <ProfileForm />,
-}
-
+      {
+        path: "profile", 
+        element: <ProfileForm />,
+      },
     ],
   },
 ]);
