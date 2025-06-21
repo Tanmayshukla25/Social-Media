@@ -7,6 +7,14 @@ import Register from "./Register";
 import ProfileForm from "./ProfileForm";
 import MainLayout from "./MainLayout";
 
+import Message from "./Message";
+import Post from "./Post";
+import Connection from "./Connection";
+import Notification from "./Notification";
+
+import Setting from "./setting";
+import Homepage from "./Home";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,11 +26,38 @@ const router = createBrowserRouter([
   },
   {
     path: "/app",
-    element: <MainLayout />, 
+    element: <MainLayout />,
     children: [
+
+        {
+        path: "/app/Home",
+        element: <Homepage />,
+      },
       {
-        path: "profile", 
+        path: "/app/profile",
         element: <ProfileForm />,
+      },
+     
+      {
+        path: "/app/Message",
+        element: <Message />,
+      },
+      {
+        path: "/app/post",
+        element: <Post />,
+      },
+      {
+        path: "/app/connection",
+        element: <Connection />,
+      },
+      {
+        path: "/app/notifiction",
+        element: <Notification />,
+      },
+    
+      {
+        path: "/app/setting",
+        element: <Setting />,
       },
     ],
   },

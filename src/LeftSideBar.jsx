@@ -8,38 +8,39 @@ const LeftSideBar = () => {
         Menu
       </h2>
       <nav className="flex flex-col gap-6 text-lg font-medium">
+       
         <Link
-          to="/message"
+          to="/app/message"
           className="hover:bg-white hover:text-blue-800 transition-all duration-300 px-4 py-2 rounded-lg"
         >
           Message
         </Link>
         <Link
-          to="/post"
+          to="/app/post"
           className="hover:bg-white hover:text-blue-800 transition-all duration-300 px-4 py-2 rounded-lg"
         >
           Post
         </Link>
         <Link
-          to="/connection"
+          to="/app/connection"
           className="hover:bg-white hover:text-blue-800 transition-all duration-300 px-4 py-2 rounded-lg"
         >
           Connection
         </Link>
         <Link
-          to="/notification"
+          to="/app/notifiction"
           className="hover:bg-white hover:text-blue-800 transition-all duration-300 px-4 py-2 rounded-lg"
         >
-        Notification
+          Notification
         </Link>
         <Link
-          to="/profile"
+          to="/app/profile"
           className="hover:bg-white hover:text-blue-800 transition-all duration-300 px-4 py-2 rounded-lg"
         >
           Profile
         </Link>
         <Link
-          to="/setting"
+          to="/app/setting"
           className="hover:bg-white hover:text-blue-800 transition-all duration-300 px-4 py-2 rounded-lg"
         >
           Setting
